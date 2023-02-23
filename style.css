@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow-x: hidden;
+}
 .nav-main{
     /* text-align: center; */
     background-color: lightblue;
@@ -78,7 +81,7 @@ footer{
     border-top :1rem solid red;
     border-bottom :1rem solid red;
     height: 50vh;
-    width: 100%;
+    width: 96%;
 }
 .titleh3{
     font-size: 40px;
@@ -102,3 +105,37 @@ button{
     background-color: rgb(162, 162, 236);
     border-radius: 10px;
 }
+
+
+/* media query */
+img{
+    height: 30vh;
+    width: 100%;
+}
+.media{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 1rem;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+.m-q_{
+    /* width: 100px; */
+    background-color: pink;
+    height: 30px;
+    list-style: none;
+    /* margin: 20px; */
+}
+
+@media screen and (max-width:1000px){
+ul{
+    flex-direction: column;
+
+}
+}
+@media screen and (max-width:1000px){
+.media{
+    grid-template-columns: 50% 50%;
+}}
